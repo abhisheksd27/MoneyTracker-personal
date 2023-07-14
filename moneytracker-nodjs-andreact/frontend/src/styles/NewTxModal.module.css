@@ -1,0 +1,8 @@
+.selectedUser {
+  padding: 2px 5px;
+  border: 2px solid black;
+  width: max-content;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+}

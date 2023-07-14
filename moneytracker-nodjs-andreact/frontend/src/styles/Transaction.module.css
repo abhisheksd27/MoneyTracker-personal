@@ -1,0 +1,8 @@
+.container {
+    border-radius: 4px;
+    border: 1px solid rgba(43, 42, 42, 0.782);
+    padding: 15px 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px
+}

@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-flow: column;
+  gap: 50px;
+  align-items: center;
+  height: max-content;
+  justify-content: center;
+  z-index: -2;
+  padding: 45px 25px;
+}
+
+.actionBtn {
+  background: #94d8ff;
+  color: black;
+  font-weight: 600;
+  border: 0;
+  box-shadow: 3px 3px 3px #699bb7;
+}
+
+.budgetContainer {
+  bottom: 26vw;
+  width: 36vw;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  z-index: 200;
+  position: absolute;
+}
+
+.budgetInner {
+  position: absolute;
+  top: -2vw;
+  font-weight: normal;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+@media (max-width: 550px) {
+  .budgetContainer {
+    margin-top: -55vw;
+    width: 72vw;
+    font-size: 40px;
+  }
+
+  .budgetInner {
+    font-size: 12px;
+    top: -5vw;
+  }
+}

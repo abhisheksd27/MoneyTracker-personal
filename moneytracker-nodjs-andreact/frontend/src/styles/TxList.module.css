@@ -1,0 +1,13 @@
+.txContainer {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  gap: 25px;
+}
+
+.filterWrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}

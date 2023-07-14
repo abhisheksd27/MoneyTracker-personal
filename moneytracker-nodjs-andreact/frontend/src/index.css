@@ -1,0 +1,38 @@
+:root {
+  --bs-body-font-family: "Inter";
+}
+
+body {
+  font-family: "Inter" !important;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+.actionBtn {
+  background: #94d8ff;
+  color: black;
+  font-weight: 600;
+  border: 0;
+  box-shadow: 3px 3px 3px #699bb7;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

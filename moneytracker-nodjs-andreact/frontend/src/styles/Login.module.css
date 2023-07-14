@@ -1,0 +1,28 @@
+.container {
+    background-image: url('/pattern_texture1165.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100vw;
+    height:100vh;
+}
+
+form {
+    background-color: white;
+    color: black;
+    padding: 45px 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    background: white;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 80px;
+}

@@ -1,0 +1,42 @@
+{
+  "name": "cohesive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend:dev": "ts-node backend/index.ts",
+    "frontend:dev": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "dev-prepare": "npm i && prisma migrate dev && prisma db seed && cd frontend && npm i"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.15",
+    "@types/express-session": "^1.17.5",
+    "@types/node": "^18.11.18",
+    "prisma": "^4.8.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^4.5.14",
+    "@prisma/client": "^4.8.1",
+    "axios": "^1.2.2",
+    "bootstrap": "^5.2.3",
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "react-autocomplete-input": "^1.0.19",
+    "react-bootstrap": "^2.7.0",
+    "react-bootstrap-typeahead": "^6.0.0",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^6.6.2"
+  }
+}

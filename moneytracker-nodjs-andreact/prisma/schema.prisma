@@ -1,0 +1,40 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Transaction {
+  category     String
+  id           Int      @id @default(autoincrement())
+  amount       Float
+  name         String
+  user         User     @relation(fields: [userUsername], references: [username])
+  date         DateTime
+  userUsername String
+}
+
+model User {
+  username       String        @id
+  monthly_budget Int
+  password       String
+  Transaction    Transaction[]
+  OwedTo         Owed[]        @relation(name: "owed_to")
+  OwedBy         Owed[]        @relation(name: "owed_by")
+}
+
+model Owed {
+  byUser     User   @relation(name: "owed_by", fields: [byUsername], references: [username])
+  toUser     User   @relation(name: "owed_to", fields: [toUsername], references: [username])
+  amt        Float
+  toUsername String
+  byUsername String
+
+  @@id([toUsername, byUsername])
+}

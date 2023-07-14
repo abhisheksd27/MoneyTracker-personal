@@ -1,0 +1,9 @@
+how to run
+cd backend
+
+and 
+
+npm run dev
+
+
+https://github.com/keerthivasansa/money-tracker#installation

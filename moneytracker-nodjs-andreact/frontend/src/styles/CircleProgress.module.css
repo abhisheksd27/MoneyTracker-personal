@@ -1,0 +1,63 @@
+.circular-progress {
+  position: relative;
+  display: inline-block;
+  z-index: -1;
+  display: block;
+  height: 500px;
+  margin-right: 20px;
+  background-color: white;
+  height: max-content;
+  margin-bottom: -15vw;
+}
+
+.circular-progress-circle {
+  position: relative;
+  width: 35vw;
+  height: 35vw;
+  background: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.segment {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vw;
+  transform-origin: 0 0;
+}
+
+.segmentbg {
+  z-index: -1;
+  background-color: rgb(184, 184, 184);
+}
+
+.circular-progress-inner {
+  position: absolute;
+  left: 50%;
+  color: black;
+  top: 50%;
+  width: 33.5vw;
+  height: 33.5vw;
+  transform: translateX(-50%) translateY(-50%);
+  background: #fff;
+  border-radius: 50%;
+}
+
+@media (max-width: 550px) {
+
+  .circular-progress {
+    margin-bottom: -50%;
+  }
+
+  .circular-progress-inner {
+    width: 71vw;
+    height: 71vw;
+  }
+
+  .circular-progress-circle {
+    width: 75vw;
+    height: 75vw;
+  }
+}
